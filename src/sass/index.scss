@@ -1,0 +1,779 @@
+@import "public";
+//顶部模块
+#topWrap{
+    background: #010101;
+    .top_cont{    
+        height: 45px;
+        position: relative;
+        //logo
+        .site-logo{              
+            height: 100%;
+            h1{
+                margin-top: 7px;
+                a:hover{
+                    opacity: 0.9;
+                }
+            }
+            }
+            //右边用户菜单
+        .site-user-info-box{
+            width: 600px;
+            height: 15px;
+            line-height: 45px;
+            padding-right: 20px;
+            //App二维码
+            .app-download-box{
+                display: none;
+                position: absolute;
+                top: 45px;
+                right: 0;
+                width: 110px;
+                height: 110px;
+                img{
+                    width: 100%;
+                }
+            }
+            .app-download .menu-hd a:hover .app-download-box{
+                display: block;
+            }
+            .menu-line{
+                color: #333;
+            }
+            li{
+                float: right;
+                .menu-hd{
+                    padding: 0 16px;
+                    .login{
+                        padding-right: 13px;
+                    }
+                    a{
+                        color: #cfcfcf;
+                    }
+                    a:hover{
+                        color: #fff;
+                    }
+                }
+            }
+            .designers-in .menu-hd a{
+                color: #f6d036;
+            }
+        }   
+        }
+    }
+//顶部完成
+//导航模块
+.main-nav-search{
+    padding: 15px 0;
+    .main-nav{
+        width: 650px;
+        .home{
+            margin-left: 0;
+            padding-left: 0;
+            background: 0;
+            a{
+                margin-left: 0;
+                border-bottom: 3px solid #000;
+            }
+        }
+        li{
+            background: url(../../dist/img/dot_nav.png) 0 10px no-repeat;
+            float: left;
+            padding: 0 4px 0 13px;
+            margin-left: 8px;
+            a{
+                font-size: 16px;
+                padding: 0 6px 6px;
+                margin: 0 10px;
+            }
+            a:hover{
+                border-bottom: 3px solid #000;
+            }
+        }
+    }
+    .main-search{
+        width: 330px;
+        .search{
+            height: 30px;
+            .search-text{
+                color: #eaeaea;
+                width: 272px;
+                height: 28px;
+                border: 1px solid #e2e2e2;
+                padding: 0 5px;
+                line-height: 28px;
+            }
+            .search-submit{
+                width: 43px;
+                height: 30px;
+                cursor: pointer;
+                background: url(../../dist/img/pc_new_icon.png) 0 -40px no-repeat;
+            }
+            }
+        }
+    }
+    // 导航完毕
+    //自定义模块
+    //轮播图
+.banner-box{
+    height: 360px;
+    background: #ddd;
+    .switch-banner-box{
+        height: 100%;
+        .banner-left{
+            width: 770px;
+            height: 100%;
+            background: #fff;
+            overflow: hidden;
+            .user-section{
+                width: 770px;
+                height: 100%;
+                clear: both;
+                text-align: center;
+                .focus-show{
+                    position: relative;
+                    width: 770px;
+                    overflow: hidden;
+                    .col-pic-box{
+                        position: relative;
+                        width: 770px;
+                        height: 360px;
+                        overflow: hidden;
+                        ul{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 999999px;
+                            li{
+                                float: left;
+                                a{
+                                    width: 770px;
+                                    height: 360px;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                    .btn{
+                        display: none;
+                        opacity: 0.8;
+                    }
+                    .swiper-scrollbar{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 770px;
+                        height: 2px;
+                        background: #e8e8e8;
+                        z-index: 6;
+                        overflow: hidden;
+                    }
+                }
+                .focus-show:hover .btn{
+                    display: inline;
+                }
+            }
+        }
+        .hot-banner{
+            width: 205px;
+            height: 100%;
+            overflow: hidden;
+            img{
+                width: 205px;
+                height: 360px;
+            }
+            img:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+//轮播图完毕
+//大家喜欢
+.likes-box{
+    padding-top: 35px;
+    .likes-left{
+        width: 623px;
+        padding-bottom: 20px;
+        h2{
+            width: 82px;
+            height: 15px;
+            text-indent: -9999px;
+            background: url(../../dist/img/pc_new_icon.png) no-repeat;
+            background-position: 0 -77px;
+        }
+        h3{
+            color: #cacaca;
+            line-height: 15px;
+            padding-left: 20px;
+            font-size: 12px;
+        }
+    }
+    .likes-right a{
+        font-size: 14px;
+        color: #939598;
+        float: left;
+        margin-left: 30px;
+        em{
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #000;
+            margin: 7px 8px;
+            border-radius: 5px;
+        }
+    }
+    .likes-right a:hover{
+        color: #000;
+    }
+    .likes-cont{
+        height: 360px;
+        .likes-cont-left{
+            width: 850px;
+            height: 360px;
+        }
+    }
+}
+// 大家喜欢暂时未完成
+//设计师品牌
+ .designer-box{
+     padding-top: 35px;
+     .title-box{
+         overflow: hidden;
+         padding-bottom: 20px;
+         .title-cont{
+            width: 780px;
+            height: 20px;
+            h2{
+                width: 98px;
+                height: 15px;
+                text-indent: -9999px;
+                background: url(../../dist/img/pc_new_icon.png) no-repeat;
+                background-position: 0 -96px;
+            }
+            h3{
+               color: #cacaca;
+               line-height: 15px;
+               padding-left: 20px;
+               font-size: 12px;
+            }
+        }
+     }
+     .cont-box{
+         overflow: hidden;
+         .designer-cont{
+             width: 100%;
+             ul{
+                 width: 100%;
+                 margin-top: -22px;
+                 li{
+                    float: left;
+                    width: 168px;
+                    margin-left: 15px;
+                    margin-right: 11px;
+                    margin-top: 22px;
+                    border: 1px solid #f6f6f6;
+                    background: #f6f6f6;
+                    .dg-pic{
+                        display: table-cell;
+                        width: 168px;
+                        height: 166px;
+                        vertical-align: middle;
+                        text-align: center;
+                        background: #fff;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid #ccc;
+                        img{
+                            max-width: 164px;
+                            max-height: 164px;
+                        }
+                        img:hover{
+                            opacity: 0.8;
+                        }
+                    }
+                    .dg-title{
+                        width: 168px;
+                        height: 29px;
+                        font-size: 14px;
+                        line-height: 29px;
+                        text-align: center;
+                        font-weight: 700;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        a{
+                            color: #484848;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                 }
+                 li:hover{
+                     background: #ccc;
+                 }
+                 .other{
+                    background: 0 0;
+                    height: 190px;
+                    border: none;
+                    padding-top: 15px;
+                    a{
+                        display: block;
+                        width: 150px;
+                        height: 150px;
+                        border: 3px solid #000;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                        font-size: 16px;
+                        color: #000;
+                        padding: 0;
+                        text-align: center;
+                        span{
+                            display: block;
+                            margin-top: 47px;
+                        }
+                    }
+                    a:hover{
+                        background: #000;
+                        color: #fff;
+                    }
+                 }
+                 .other:hover{
+                    background: 0;
+                }
+             }
+         }
+     }
+ }
+ //设计师品牌完毕
+ //手工艺人
+.handcraft-box{
+    padding-top: 35px;
+    .title-box{
+        overflow: hidden;
+        .title-cont{
+           padding-bottom: 20px;
+           width: 780px;
+           height: 20px;
+           h2{
+               width: 83px;
+               height: 15px;
+               text-indent: -9999px;
+               background: url(../../dist/img/pc_new_icon.png) no-repeat;
+               background-position: 0 -116px;
+           }
+           h3{
+              color: #cacaca;
+              line-height: 15px;
+              padding-left: 20px;
+              font-size: 12px;
+           }
+       }
+    }
+    .handcraft-cont{
+        overflow: hidden;
+        ul{
+            overflow: hidden;
+            margin-left: -28px;
+            width: 1009px;
+            padding-bottom: 5px;
+            li{
+                float: left;
+                width: 221px;
+                margin-left: 29px;
+                margin-bottom: 30px;
+                border: 1px solid #f6f6f6;
+                background: #f6f6f6;
+                position: relative;
+                .hc-pic{
+                    display: table-cell;
+                    width: 221px;
+                    height: 221px;
+                    vertical-align: middle;
+                    text-align: center;
+                    text-decoration: none;
+                    background: #fff;
+                    border-bottom: 1px solid #ccc;
+                    img{
+                        vertical-align: middle;
+                        max-width: 214px;
+                        max-height: 214px
+                    }
+                    img:hover{
+                        opacity: 0.8;
+                    }
+                }
+                .hc-title{
+                    height: 40px;
+                    -webkit-box-shadow: inset 0 1px 0 rgba(181,178,178,.2);
+                    -moz-box-shadow: inset 0 1px 0 rgba(181,178,178,.2);
+                    box-shadow: inset 0 1px 0 rgba(181,178,178,.2);
+                    font-size: 14px;
+                    text-align: left;
+                    font-weight: 700;
+                    padding: 0 40px 0 15px;
+                    background: url(../../dist/img/pc_new_icon.png) 186px -171px no-repeat;
+                    a{
+                        display: block;
+                        width: 170px;
+                        height: 26px;
+                        -ms-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        line-height: 26px;
+                        color: #484848;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                    span{
+                        display: block;
+                        color: #9a9a9a;
+                        font-size: 12px;
+                        line-height: 8px;
+                        em{
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                .handcraft-icon{
+                    display: none;
+                    position: absolute;
+                    top: -33px;
+                    left: 10px;
+                    width: 35px;
+                    height: 35px;
+                    margin-top: 18px;
+                    overflow: hidden;
+                    z-index: 100;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                    vertical-align: middle;
+                    box-shadow: 1px 1px 1px #999;
+                    a{
+                        display: table-cell;
+                        text-align: center;
+                        vertical-align: middle;
+                        width: 35px;
+                        height: 35px;
+                        overflow: hidden;
+                        img{
+                            vertical-align: middle;
+                            max-width: 35px;
+                        }
+                    }
+                }
+            }
+            li:hover{
+                background: #ccc;
+            }
+            li:hover .handcraft-icon{
+                display: block;
+            }
+            .other{
+                background: 0 0;
+                height: 190px;
+                border: none;
+                padding-top: 30px;
+                a{
+                    display: block;
+                    width: 150px;
+                    height: 150px;
+                    border: 3px solid #000;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    font-size: 16px;
+                    color: #000;
+                    padding: 0;
+                    text-align: center;
+                    margin-left: 57px;
+                    span{
+                        display: block;
+                        margin-top: 47px;
+                    }
+                }
+                a:hover{
+                    background: #000;
+                    color: #fff;
+                }
+             }
+             .other:hover{
+                 background: 0;
+             }
+        }
+    }
+}
+//手工艺人完毕
+// 猜你喜欢
+.random-links{
+    padding-top: 35px;
+    .title-box{
+        .title-cont{
+            width: 780px;
+            padding-bottom: 20px;
+            h2{
+                width: 84px;
+                height: 15px;
+                text-indent: -9999px;
+                background: url(../../dist/img/pc_new_icon.png) no-repeat;
+                background-position: 0 -155px;
+            }
+        }
+    }
+    .random-links-item ul{
+        margin-left: -11px;
+        li{
+            float: left;
+            margin-left: 11px;
+            overflow: hidden;
+            a{
+                display: table-cell;
+                text-align: center;
+                width: 130px;
+                height: 130px;
+                vertical-align: middle;
+                img{
+                    vertical-align: middle;
+                    max-width: 130px;
+                    max-height: 130px;
+                }
+                img:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+// 猜你喜欢完毕
+// 商务合作
+.business-cooperation{
+    margin: 26px auto;
+    width: 940px;
+    padding: 15px 20px;
+    border-top: 2px dotted #ccc;
+    border-bottom: 2px dotted #ccc;
+    overflow: hidden;
+    .designer-business{
+        width: 260px;
+        padding: 20px 30px 20px 0;
+        border-right: 1px solid #dadada;
+        overflow: hidden;
+        h3{
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+        }
+        p{
+            font-size: 14px;
+            line-height: 29px;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+    .down-busindess{
+        width: 315px;
+        border-right: 1px solid #dadada;
+        padding: 20px 0;
+        .weibo-app{
+            width: 100px;
+            padding: 0 30px;
+            p{
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            .weibo-icon{
+                background: url(../../dist/img/pc_new_icon.png) -270px -107px no-repeat;
+                padding-left: 40px;
+                margin-bottom: 22px;
+            }
+            .app-phone-icon{
+                background: url(../../dist/img/pc_new_icon.png) -270px -144px no-repeat;
+                padding-left: 40px;
+            }
+        }
+        .weixin-new{
+            width: 121px;
+            height: 64px;
+            padding-top: 12px;
+        }
+    }
+    .contact-us{
+        width: 300px;
+        padding-left: 30px;
+        padding-top: 10px;
+        h3{
+            font-size: 14px;
+            font-weight: 700;
+            em{
+                font-size: 12px;
+                padding: 0 15px;
+                font-weight: 400;
+            }
+            span{
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+        p{
+            font-size: 12px;
+            line-height: 29px;
+        }
+    }
+}
+// 商务合作完毕
+//自定义模块完毕
+//底部模块
+.footer{
+    //clear: both;
+    background: #000;
+    text-align: center;
+    color: #727272;
+    a{
+        padding: 0 15px 0 0;
+        color: #484848;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .footer-wrap{
+        height: 280px;
+        .footer-logo{
+            width: 205px;
+            height: 225px;
+            float: right;
+            overflow: hidden;
+            background: url(../../dist/img/xq_bottom_img.png) no-repeat;
+            a{
+                display: block;
+                width: 100%;
+                height: 200px;
+            }
+        }
+        .word{
+            padding: 25px 0 0;
+            height: 90px;
+            margin-right: 285px;
+            margin-bottom: 35px;
+            .say{
+                font-size: 18px;
+                color: #fff;
+                text-align: left;
+            }
+            .author{
+                font-size: 14px;
+                color: #fff;
+                text-align: right;
+                padding: 25px 0 0;
+                em{
+                    padding-left: 10px;
+                }
+            }
+        }
+        .copyright{
+            padding: 5px 0 0;
+            text-align: left;
+            .link{
+                position: relative;
+                width: 597px;
+                height: 54px;
+                a{
+                    color: #808285;
+                    float: left;
+                    margin: 0 5px 0 0;
+                    padding: 0 15px 0 0;
+                    text-decoration: none;
+                }
+                .link-weibo,.link-douban,.link-renren{
+                    display: inline-block;
+                    zoom: 1;
+                    vertical-align: middle;
+                    height: 18px;
+                    padding: 0 0 0 22px;
+                    background: url(../../dist/img/ico_common.png) -999em 0 no-repeat;
+                }
+                .link-weibo{
+                    background-position: -224px -5944px;
+                    padding-left: 26px;
+                } 
+                .link-douban{
+                    background-position: -224px -5976px;;
+                } 
+                .link-renren{
+                    background-position: -224px -6016px;
+                    padding-left: 36px;
+                } 
+            }
+            .daohang{
+                color: #808285;
+                margin: 0 -10px 0 5px;
+            }
+        }
+        .friend-link{
+            width: 730px;
+            border-top: 1px solid #58595c;
+            padding: 5px 0 0;
+            margin: 10px 285px 0 0;
+            text-align: left;
+            h3{
+                display: inline;
+                font-size: 12px;
+            }
+            a{
+                color: #58595b;
+                font-size: 12px;
+                margin: 0 10px;
+                padding: 0;
+            }
+        }
+    }
+}
+//底部完毕
+//返回顶部
+.gotop{
+    display: block;
+    position: fixed;
+    z-index: 9867;
+    left: 50%;
+    margin-left: 560px;
+    bottom: 340px;
+    text-indent: -9999em;
+    width: 28px;
+    height: 90px;
+    overflow: hidden;
+    float: left;
+    background: url(../../dist/img/gotop.gif) center bottom no-repeat;
+}
+.gotop:hover{
+    background: url(../../dist/img/gotop_hover.gif) center bottom no-repeat;
+    height: 117px;
+}
+.feedback{
+    width: 53px;
+    height: 53px;
+    position: fixed;
+    left: 50%;
+    z-index: 8998;
+    margin-left: 546px;
+    bottom: 285px;
+    overflow: hidden;
+    a {
+        width: 53px;
+        height: 53px;
+        float: left;
+        background: url(../../dist/img/advice.png) no-repeat;
+        text-indent: -999em;
+    }
+    a:hover{
+        background: url(../../dist/img/advice-hover.png) no-repeat;
+    }
+}
+     

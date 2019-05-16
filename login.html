@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="dist/css/login.min.css">
+</head>
+<body>
+    <!-- 顶部 -->
+    <div class="site-nav">
+        <div class="site-nav-bg site">
+            <div class="site-logo fl">
+                <h1 class="fl">
+                    <a href="#">
+                        <img src="./dist/img/login_logo.jpg" alt="">
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部完成 -->
+    <div class="login-layout">
+        <div class="login-left-cont">
+            <div class="pic-box">
+                <a href="index.html">
+                    <img src="./dist/img/login_left_pic_03.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="login-box-item">
+            <div class="login-box-body">
+                <div class="login-title">
+                    <h2>账户登录</h2>
+                </div>
+                <div class="login-line">
+                    <span>使用想去账号登录</span>
+                </div>
+                <div class="login-xq">
+                    <ul>
+                        <li>
+                            <div class="input-item">
+                                <input id="username" class="input-normal" type="text" name="username" value="" placeholder="请输入手机号或邮箱">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input-item">
+                                <input id="password" class="input-normal" type="password" value="" placeholder="请输入密码">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-bar clear_fix">
+                        <div class="error-box clear_fix">
+                            <div id="txt" class="msg-text-error fl"></div>
+                            <a class="fr" href="#">忘记密码</a>
+                        </div>
+                        <a id="login" class="btn-main-s" href="#" name="login">登录</a>
+                    </div>
+                </div>
+                <div class="faster-line">
+                    <span>使用社交账号登录</span>
+                </div>
+                <div class="login-openid">
+                    <div class="site-openid clear_fix">
+                        <ul>
+                            <li class="weixin">
+                                <a id="weixin_auth"" href="#">
+                                    <i></i>
+                                </a>
+                            </li>
+                            <li class="weibo">
+                                <a id="weibo_auth" href="#">
+                                    <i></i>
+                                </a>
+                            </li>
+                            <li class="qq">
+                                <a id="qq_auth" href="#">
+                                    <i></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faster-register">
+                    还没有账号?
+                    <a href="register.html">立即注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/js/login.js"></script>
+    <script src="./dist/js/jquery-1.11.3.min.js"></script>
+    <script src="./src/js/cookie.js"></script>
+</body>
+</html>

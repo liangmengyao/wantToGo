@@ -1,0 +1,61 @@
+@charset "utf-8";
+//重置样式
+body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,figure,figcaption{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 12px/1.5 Tahoma,Verdana;
+}
+html,body{
+    height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+a,u{
+    text-decoration: none;
+}
+b,strong{
+    font-weight: normal;
+}
+i,em{
+    font-style: normal;
+}
+ul,ol,li{
+    list-style: none;
+}
+img{
+    display: inline-block;
+    border: 0;
+}
+input{
+    outline: none;
+    border: 0;
+}
+.clear_fix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clear_fix{
+    zoom: 1;
+}
+//公共样式
+.site{
+    width: 980px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+a, a:hover{
+    color: #000;
+} 

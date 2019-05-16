@@ -1,0 +1,111 @@
+@import "public";
+// 背景
+body{
+    background: url(../../dist/img/brickwall.png)
+}
+//顶部
+.site-nav{
+    background: 0;
+    height: 98px;
+    .site-nav-bg{
+        height: 98px;
+        .site-logo{
+            width: 330px;
+            height: 98px;
+            h1{
+                width: 329px;
+                height: 100%;
+                text-align: center;
+                display: table;
+                overflow: hidden;
+                a{
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        vertical-align: middle;
+                        max-width: 329px;
+                    }
+                }
+            }
+        }
+    }
+}
+// 顶部完毕
+.register-box{
+    width: 980px;
+    background: #fff;
+    margin: 0 auto 100px;
+    border: 1px solid #dbdbdb;
+    .register-body{
+        width: 350px;
+        margin: 0 auto;
+        text-align: left;
+        .register-form-header h2{
+            padding-top: 25px;
+            padding-bottom: 27px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .register-form-body{
+            padding-bottom: 36px;
+            .login-box{
+                text-align: center;
+                font-size: 12px;
+            }
+            ul li .input-group{  
+                width: 100%;
+                vertical-align: middle;
+                .input-item{
+                    border: 1px solid silver;
+                    border-radius: 4px;
+                    text-align: left;
+                    overflow: hidden;
+                    input{
+                        border: none;
+                        font-size: 14px;
+                        padding-left: 15px;
+                        border-radius: 4px;
+                        width: 305px\9;
+                        width: 290px;
+                        height: 44px;
+                        float: none;
+                        border: #fff;
+                        outline: 0;
+                    }
+                }
+                .phone-tip{
+                    font-size: 14px;
+                    color: #d3d3d3;
+                    padding-top: 5px;
+                }
+                .error-tip{
+                    height: 30px;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #ff4a4a;
+                }
+                .register-btn{
+                    display: inline-block;
+                    background: #343434;
+                    color: #fff;
+                    text-align: center;
+                    height: 48px;
+                    line-height: 48px;
+                    width: 100%;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                .xy{
+                    color: #707070;
+                    padding: 5px 0 30px;
+                    font-size: 14px;
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

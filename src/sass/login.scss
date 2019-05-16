@@ -1,0 +1,194 @@
+@import "public";
+// 背景
+body{
+    background: url(../../dist/img/brickwall.png)
+}
+//顶部
+.site-nav{
+    background: 0;
+    height: 98px;
+    .site-nav-bg{
+        height: 98px;
+        .site-logo{
+            width: 330px;
+            height: 98px;
+            h1{
+                width: 329px;
+                height: 100%;
+                text-align: center;
+                display: table;
+                overflow: hidden;
+                a{
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        vertical-align: middle;
+                        max-width: 329px;
+                    }
+                }
+            }
+        }
+    }
+}
+// 顶部完毕
+.login-layout{
+    width: 980px;
+    margin: 12px auto 100px;
+    overflow: hidden;
+    .login-left-cont{
+        float: left;
+        width: 546px;
+        height: 450px;
+        text-align: center;
+        overflow: hidden;
+        .pic-box{
+            display: table-cell;
+            width: 546px;
+            height: 450px;
+            overflow: hidden;
+            vertical-align: middle;
+            img{
+                vertical-align: middle;
+                max-width: 546px;
+                max-height: 450px;
+            }
+        }
+    }
+    .login-box-item{
+        float: right;
+        width: 392px;
+        height: 448px;
+        border: 1px solid #d8d8d8;
+        background: #fff;
+        overflow: hidden;
+        .login-box-body{
+            padding: 25px 22px 21px;
+            .login-title{
+                text-align: center;
+                padding: 0 0 20px;
+                font-size: 16px;
+                color: #000;
+            }
+            .login-line{
+                background: url(../../dist/img/faster_line.jpg) center center no-repeat;
+                width: 100%;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+                font-size: 12px;
+                color: #d3d3d3;
+                margin-bottom: 17px;
+            }
+            .login-xq{
+                padding: 0 0 26px;
+                ul li .input-item{
+                    border: 1px solid silver;
+                    border-radius: 4px;
+                    height: 46px;
+                    line-height: 46px;
+                    text-align: left;
+                    font-size: 14px;
+                    margin: 0 auto 10px;
+                    overflow: hidden;
+                    input{
+                        border: none;
+                        height: 44px;
+                        padding: 0 3px;
+                        float: right;
+                        font-size: 16px;
+                        width: 302px;
+                        overflow: hidden;
+                        line-height: 47px;
+                        margin-right: 6px;
+                    }
+                }
+                .btn-bar{
+                    .error-box{
+                        line-height: 16px;
+                        padding-bottom: 5px;
+                        .msg-text-error{
+                            color: #ff4a4a;
+                            width: 70%;
+                            text-align: left;
+                            font-size: 14px;
+                            overflow: hidden;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    .btn-main-s{
+                        display: block;
+                        height: 48px;
+                        line-height: 48px;
+                        font-size: 16px;
+                        text-align: center;
+                        background: #343434;
+                        color: #fff;
+                        overflow: hidden;
+                        zoom: 1;
+                        border-radius: 4px;
+                    }
+                    .btn-main-s:hover{
+                        background: #000;
+                    }
+                }
+            }
+            .faster-line{
+                background: url(../../dist/img/faster_line.jpg) center center no-repeat;
+                text-align: center;
+                height: 16px;
+                line-height: 16px;
+                margin-bottom: 17px;
+                color: #d3d3d3;
+                overflow: hidden;
+            }
+            .login-openid{
+                .site-openid{
+                    padding-left: 103px;
+                    ul{
+                        li{
+                            // display: inline;
+                            float: left;
+                            margin: 0 16px 0 0;
+                            a{
+                                display: block;
+                                width: 36px;
+                                height: 36px;
+                                overflow: hidden;
+                                i{
+                                    display: block;
+                                    width: 36px;
+                                    height: 36px;
+                                    overflow: hidden;
+                                    background: url(../../dist/img/three_logo.gif);
+                                }
+                            }
+                        }
+                        .weixin a i{
+                            background-position: 0 0;
+                        }
+                        .weibo a i{
+                            background-position: -52px 0;
+                        }
+                        .qq a i{
+                            background-position: -105px 0;
+                        }
+                    }
+                    
+                }
+            }
+            .faster-register{
+                padding: 19px 0 0;
+                font-size: 14px;
+                color: #c3c3c3;
+                text-align: center;
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
